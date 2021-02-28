@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url("RobotoMono-Regular.ttf");
+}
+
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("MavenPro-Regular.ttf");
+}
+
+
+@media (max-width: 1920px) {
+  #divcontent{
+    overflow-y: scroll;
+    height: 580px;
+  }
+
+  #classe_c_1{
+    width: 36vw;
+    margin-right:2vw;
+  
+  }
+  
+  #classe_c_2{
+    width: 48vw;
+  
+  }
+  
+}
+
+
+@media (max-width: 1368px) {
+
+  #divcontent{
+    overflow-y: scroll;
+    height: 430px;
+  }
+
+  #imgrepl_calc_1{
+    max-width: 485px;
+  }
+  #imgrepl_calc_2{
+    max-width: 380px;
+  }
+  #imgeredita{
+    max-width: 410px;
+  }
+  #dowhileimg{
+    max-height: 250px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+
+  #divcontent{
+    overflow-y: scroll;
+    height: 410px;
+  }
+}
+
+
+@media (max-width: 950px) {
+
+  #divcontent{
+    overflow-y: scroll;
+    height: 420px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #divcontent{
+    overflow-y: scroll;
+    height: 460px;
+  }
+}
+
+
+@media (max-width: 420px) {
+  #divcontent{
+    overflow-y: scroll;
+    height: 650px;
+  }
+  #imgeredita{
+    width: 350px;
+  }
+  #imgpolimorfismo{
+    max-width: 350px;
+  }
+  #imgrepl_calc_1{
+    max-width: 350px;
+  }
+  #imgrepl_calc_2{
+    max-width: 350px;
+  }
+  #homevideo {
+    /* override other styles to make responsive */
+    width: 90%    !important;
+    height: auto   !important;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  #divcontent{
+    overflow-y: scroll;
+    height: 680px;
+  }
+  #homevideo {
+    /* override other styles to make responsive */
+    width: 90%    !important;
+    height: auto   !important;
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  #divcontent{
+    overflow-y: scroll;
+    height: 750px;
+  }
+  #imgeredita{
+    width: 300px;
+  }
+  #imgpolimorfismo{
+    max-width: 300px;
+  }
+  #imgrepl_calc_1{
+    max-width: 300px;
+  }
+  #imgrepl_calc_2{
+    max-width: 300px;
+  }
+  #homevideo {
+    /* override other styles to make responsive */
+    width: 90%    !important;
+    height: auto   !important;
+  }
+  
+}
+
+
+#classe_c_1{
+  width: 34vw;
+  margin-right:2vw;
+
+}
+
+#classe_c_2{
+  width: 45vw;
+
+}
+
+
+
+
+#divcontent {
+  border: solid #50c1e9;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.815);
+}
+
+*{
+  font-family: 'Maven Pro', sans-serif;
+}
+
+
+.chi-siamo-container{
+  border: solid #50c1e9;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.815);
+}
+
+body{
+  background: url("../img/background6.jpg");
+}
+
+.breadcrumb{
+  background: #fefefe80;
+  font-size: 1.3rem;
+}
+
+.breadcrumb-item{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.homeicons{
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.homeicons figcaption{
+  
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+.aiuto{
+  border: 1px solid black;
+}
+
+.aiuto img{
+  margin-top: 10%;
+}
+
+
+.contatti img{
+  
+  max-width: 6vw;
+}
+
+
+
+
+
+
+
+@media (max-height: 640px) {
+  #divcontent{
+    overflow-y: scroll;
+    height: 425px;
+  }
+
+  #imgrepl_calc_1{
+    max-width: 485px;
+  }
+  #imgrepl_calc_2{
+    max-width: 380px;
+  }
+  #imgeredita{
+    max-width: 410px;
+  }
+  #dowhileimg{
+    max-height: 260px;
+  }
+}
+

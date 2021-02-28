@@ -1,0 +1,211 @@
+
+
+
+
+var objJson =[
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Tipi di Linguaggi</strong></h4></span>
+        Benvenuto/a nel secondo capitolo
+        In questo capitolo approfondiremo quanto appena visto e lo metteremo in pratica.<br>
+        I linguaggi di programmazione si dividono in due famiglie: <b>compilati</b> e <b>interpretati</b>.<br>
+        Prima di spiegare la differenza, però è doveroso precisare che il computer, a differenza di una persona, comprende soltanto un linguaggio: quello <b>binario</b>.<br>
+        D’altro canto, è difficile per una persona scrivere un programma in codice binario, pertanto generalmente si ricorre ad un linguaggio di programmazione più “human friendly”, comprensibile quindi dall’utente programmatore.
+        Il codice scritto, però, dev’essere compreso anche dal computer per essere eseguito, e quindi ci sono due modi: compilarlo o interpretarlo (o entrambe le tecniche).
+        Un programma scritto in un linguaggio interpretato, è tradotto da un interpreter in tempo reale dal linguaggio usato dal programmatore, a quello macchina.<br>
+        Un programma scritto in un linguaggio compilato, invece, è “trasformato” - compilato- una sola volta in codice macchina, al momento della compilazione appunto.<br>
+        Entrambe le tecniche presentano vantaggi e svantaggi. 
+        Generalmente un programma scritto in un linguaggio compilato è più efficiente di uno interpretato.
+        Un programma interpretato invece, è più facile da eseguire su piattaforme diverse ed è più veloce da scrivere.`},
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4>Programma Compilato vs Interpretato</h4></span><img src="../assets/img/diagramma_compilato_vs_interpretato.png" style="width: 65vw; min-width: 360px;">`},
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Il C++ - Breve introduzione</strong></h4></span>
+        Il linguaggio di programmazione che useremo in questa sezione è il <b>C++</b>.<br>Perchè questa scelta?<br>
+        Perchè si tratta di uno dei linguaggi di programmazione più usati, è efficiente, multiparadigma (per paradigma si intende l’applicazione di  una serie di regole per risolvere un problema), ovvero procedurale imperativo e a oggetti.<br>
+        Con il paradigma procedurale imperativo, il programmatore esprime il la soluzione al problema con una serie di passi. Ad esempio: il problema della somma di due numeri interi si risolve in sei passi:<br>
+            1. chiedo il valore del primo addendo<br>
+            2. assegno il numero ad una variabile, <i>x</i><br>
+            3. chiedo il valore del secondo addendo<br>
+            4. assegno il valore acquisito ad un’altra variabile, <i>y</i><br>
+            5. assegno alla variabile risultato, il risultato dell’addizione dei valori contenuti nelle due variabili (<i>x</i> ed <i>y</i>)<br>
+            6. stampo il valore della variabile risultato<br>`},
+
+
+
+
+
+        
+
+
+{ adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Primo Algoritmo in C++</strong></h4></span>
+    È arrivato il momento di mettersi alla prova! Ho preparato per te un esempio.<br>
+    Puoi eseguire e visualizzare il codice di ogni programma su repl.  
+    Apri il link per vedere e testare l’algoritmo: 
+    <a href="https://repl.it/@andrea_carro/SommaDiDueNumeri" target="_blank">Primo Algoritmo in C++</a>
+    <div class="">
+        <img src="../assets/img/repl_istruzioni.png" style="width:25vw;">
+    </div>
+    `},
+
+
+
+
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Le funzioni</strong></h4></span>
+        <span style="text-align: center;">Adesso che hai imparato cosa sono le variabili e a codificare un semplice algoritmo, è giunto il momento di apprendere il concetto di <b>FUNZIONE</b>.<br>
+        Come sicuramente avrai notato dall’<a href="https://repl.it/@andrea_carro/SommaDiDueNumeri" target="_blank">algoritmo</a> su repl.it </span><br>
+        <div class="d-flex justify-content-center">
+        <img src="../assets/img/repl1.png" style="width: 36vw; min-width: 320px;">
+        </div>
+        E' stata dichiarata una funzione. In questo caso parliamo della funzione principale del nostro programma, ovvero il “punto d’ingresso”, da dove inizia l’esecuzione.`},
+
+
+
+
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Anatomia di una funzione o un metodo</strong></h4></span>
+        La dichiarazione di una funzione (o metodo) si compone in: “<b>tipo di ritorno</b>” (ad es. void se non ritorna nulla alla funzione chiamante, <i>int</i> se ritorna un numero intero, <i>float</i> per un numero in virgola mobile, <i>boolean</i> per un valore di verità come true o false, un tipo <i>Struct</i> o un oggetto, etc), il <b>nome della funzione</b>, e tra parentesi tonde gli <b>argomenti</b> che si desiderano passare alla funzione e che utilizzerà.
+        <span style="text-align: center;"><br>Struttura di una funzione</span><br>
+        <div class="d-flex justify-content-center">
+        <img src="../assets/img/struttura_funzione.jpg" style="width: 15vw; min-width: 320px;">
+        </div
+        
+        `},
+
+    
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Passaggio parametri: per valore e per riferimento</strong></h4></span>
+        Come abbiamo visto, è possibile passare delle <b>variabili</b> alle funzioni e i metodi. È bene precisare che le variabili passate sono sempre <i>LOCALI</i> al metodo. Significa che la modifica del valore di una variabile passata alla funzione/metodo non si riflette sulla variabile originale, questo perchè non viene passata la variabile, ma viene assegnato il valore di questa (si chiama argomento) al relativo parametro della funzione invocata. Questo vale anche se il parametro della funzione/metodo ha lo stesso nome della variabile usata come argomento nell'invocazione della funzione o metodo.<br>
+        Le variabili sono sempre passate <b>per valore</b>, a meno che si passi un <b>riferimento</b> o un puntatore (e la funzione deve accettare come parametro un puntatore o un riferimento).
+        Una funzione che accetta i parametri per riferimento, è dichiarata con i parametri con la notazione <code> tipo &nomeparametro </code><br>
+        Esempio di funzione che scambia i valori delle due variabili passate come argomento (la modifica, in questo caso si riflette sulle variabili originali): <br>
+        <code> void scambiaNumeri(int &x, int &y) {<br>
+            &nbsp&nbsp int z = x;<br>
+            &nbsp&nbsp x = y;<br>
+            &nbsp&nbsp y = z; }<br>
+          </code>
+        `},
+
+
+    
+    { adName: ` <span style="text-align: center; color:#1d3557;"><h4><strong>Gli Array</strong></h4></span>
+        Una variabile di un tipo può essere usata per salvare un elemento del tipo specificato. Esistono però diverse strutture dati per contenere una sequenza o un insieme di valori di un determinato tipo. La più comune è l'<b>array</b>.<br>
+        Un array è una sequenza di elementi dello stesso tipo disposti in maniera contigua nella memoria del calcolatore.
+        È possibile manipolare i dati di un array accedendo alle sue posizioni (o celle) mediante un indice, dopo averlo dichiarato.
+        Un array si dichiara con il nome del tipo, seguito da una coppia di parentesi quadre con all'interno il numero di celle.
+        N.B. Il numero di celle rappresenta il totale delle posizioni dell'array, ma l'indice della prima cella non parte da 1, ma da 0, quindi un array da 10 celle avrà come prima cella la numero 0, e come ultima la numero 9.<br>
+        Dichiarazione Array di interi da 5 celle: <code> int mioArray [5]; </code> <br>
+        Oppure: <code>int mioArray [5] = {1, 2, 3, 4, 5};</code> <br>
+        Assegnazione valore all'elemento della prima cella:  <code>mioArray[0] = 99;</code> <br>
+        Ovviamente è possibile iterare un array per leggere o scrivere valori con i costrutti While, e For che abbiamo già visto.<br>
+        Quando si utilizzano gli array è bene fare molta attenzione a non sbagliare l'indice della cella che si vuole leggere o scrivere, altrimenti il nostro programma richiederebbe l'accesso a posizioni di memoria non valide e di conseguenza potrebbe terminare o avere comportamenti anomali.<br>
+        Non è possibile modificare la dimensione di un array, ma è possibile crearne uno nuovo e riassegnarlo alla stessa variabile.<br>
+        `},
+
+
+
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>...alcune precisazioni</strong></h4></span>
+        Prima della dichiarazione di un nome di variabile deve SEMPRE essere specificato il <b>tipo</b>. È necessario perché il programma deve sapere in che modo rappresentare il valore e quanta memoria allocare.<br>
+        È importante precisare che ogni istruzione DEVE SEMPRE terminare con un punto e virgola.<br>
+        Nel primo capitolo abbiamo accennato le istruzioni di controllo.<br>
+        Si tratta di costrutti adatti ad eseguire un’azione piuttosto che un’altra a seconda di una condizione. Esempio:<br>
+        <code>if( ora >7 & ora < 14){<br>
+            &nbsp stampa “buongiorno”}<br>
+        else{ <br>
+            &nbsp stampa “buonasera”}</code><br>
+        N.B. le istruzioni di input/output dei dati utilizzano gli stream in C++,  e quindi gli oggetti <i>cin</i> e <i>cout</i> che fanno riferimento rispettivamente a standard input e standard output, come hai già visto nell’esercizio precedente.`},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>if-else</strong></h4></span>
+        Vediamo ora un piccolo programmino in C++ che utilizza il costrutto <b>if-else</b>.<br>
+        Apri il link, clicca su “run” e nella finestra di output inserisci i dati richiesti. Potrai comprendere meglio il funzionamento basandoti sul codice, i commenti ed il risultato ottenuto in seguito ai dati da te inseriti.
+        <a href="https://repl.it/@andrea_carro/salutoc" target="_blank">Link esercitazione Else-If</a><br>
+        <div class="d-flex justify-content-center">
+        <img src="../assets/img/repl2.png" style="width: 15vw; min-width: 320px;">
+        </div
+        `},
+
+
+
+
+    
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>While</strong></h4></span>
+        Adesso vediamo il costrutto <b>while</b>. Con questo costrutto è possibile ripetere un’istruzione (Loop) finché una condizione rimane vera.
+        Ad esempio:<br>
+            <code>while(numero<10){<br>
+                &nbsp stampa(numero); //supponiamo che esista la funzione “stampa(int numero)”<br>
+                &nbsp numero = numero+1; }</code><br>
+        Il corpo del loop (le istruzioni che si trovano all'interno delle parentesi graffe) sono eseguite dopo la valutazione dell'espressione di controllo, solo se questa risulta vera.
+        Vediamo un ultimo esempio: <a href="https://repl.it/@andrea_carro/cwhileesempio" target="_blank">Esercitazione While</a><br>
+        <div class="d-flex justify-content-center">
+            <img src="../assets/img/while.png" style="width: 38vw; min-width: 320px;">
+        </div`},
+
+    
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Do-While</strong></h4></span>
+        Abbiamo visto il While Loop, e abbiamo detto che le istruzioni contenute nel corpo vengono eseguite subito dopo la valutazione della condizione, quindi se già alla prima iterazione l'espressione viene valutata "false", le istruzioni non vengono eseguite neanche una volta.<br>
+        Nel <b>Do-While-Loop</b> invece, le istruzioni vengono sempre eseguite almeno una volta, e la condizione è valutata dopo l'esecuzione del corpo; e se non risulta vera, il ciclo si interrompe.
+        <div class="d-flex justify-content-center">
+            <img src="../assets/img/dowhile.png" id="dowhileimg">
+        </div`},
+
+
+
+    
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>For-Loop</strong></h4></span>
+        Oltre al While, abbiamo anche il <b> For-Loop</b>, il cui funzionamento è simile al <i>While</i> che abbiamo appena visto.
+        Il for Loop ci permette di dichiarare la (o le) variabile da usare nell'espressione da valutare, la condizione (ad es i<10), l'operazione da eseguire sulla variabile, ad ogni iterazione (solitamente corrisponde ad un incremento o decremento), e ovviamente il corpo che viene eseguito fin quando la condizione risulta vera.<br>
+        Qui una breve dimostrazione: <a href="https://repl.it/@andrea_carro/forc" target="_blank">For-Loop</a>
+            <div class="d-flex justify-content-center">
+                <img src="../assets/img/forloop.png" style="max-width: 360px">
+            </div`},
+
+        
+        
+
+
+
+
+
+    
+    { adName: `<b>Complimenti, sei giunto alla fine del capitolo!</b>
+        <div class="d-flex justify-content-center" style="margin-top: 5%;">
+        <figure style="text-align: center;" >
+            <a href="teoria3.html">
+                <img src="../assets/img/right-arrow_2.png" alt="capitolo successivo" style="width:12vw;"/>
+                <figcaption> Vai al capitolo successivo! </figcaption>
+            </a>
+        </figure>
+        </div>
+        
+        
+        `},
+];

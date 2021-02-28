@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EasyCoding</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/quiz_style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Modal Aiuto-->
+    <div class="modal fade" id="aiutoModalLong" tabindex="-1" role="dialog" aria-labelledby="aiutoModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="aiutoModalLongTitle">Aiuto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/esci.PNG" alt="aiuto esci">
+                  </div>
+                  <div class="col-sm">
+                    Consente di uscire dall'applicazione in ogni momento
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/home_navbar.PNG" alt="aiuto navbar">
+                  </div>
+                  <div class="col-sm">
+                    Dalla breadcrumb è possibile ripercorrere il percorso secondo l'organizzazione nell'applicazione
+                  </div>
+                </div>
+      
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/navbar_espansa.PNG" alt="aiuto navbar">
+                  </div>
+                  <div class="col-sm">
+                    Alcuni elementi della navbar sono espandibili. Clicca per vederne il contenuto
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/torna_home.PNG" alt="aiuto navbar">
+                  </div>
+                  <div class="col-sm">
+                    Cliccando questa icona, presente in alcune pagine dell'applicazione, è possibile tornare alla home
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/back-next.PNG" alt="aiuto navigazione">
+                  </div>
+                  <div class="col-sm">
+                    [Capitoli toria] Navigazione tra le pagine del capitolo corrente.<br>
+                    È presente l'indicatore del numero della pagina corrente e di quelle totali
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/avanti_quiz.PNG" alt="aiuto quiz">
+                  </div>
+                  <div class="col-sm">
+                    [Quiz] Dopo aver selezionato una risposta, passa alla domanda successiva
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/salta.PNG" alt="aiuto quiz">
+                  </div>
+                  <div class="col-sm">
+                    [Quiz] Salta domanda e passa alla successiva.<br>
+                    La risposta non data sarà conteggiata come errata
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/indietro_quiz.PNG" alt="aiuto quiz">
+                  </div>
+                  <div class="col-sm">
+                    [Quiz] Torna alla domanda precedente
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/ritenta_quiz.PNG" alt="aiuto quiz">
+                  </div>
+                  <div class="col-sm">
+                    [Schermata esito quiz] permette di ritentare il quiz corrente
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/ripassa capitolo_quiz.PNG" alt="aiuto quiz">
+                  </div>
+                  <div class="col-sm">
+                    [Schermata esito quiz] cliccando questo bottone sarà possibile ritornare al capitolo relativo al quiz
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/capitolo_successivo_quiz.PNG" alt="aiuto quiz">
+                  </div>
+                  <div class="col-sm">
+                    [Schermata esito quiz] cliccando questo bottone sarà possibile accedere al capitolo successivo a quello trattato nel quiz corrente
+                  </div>
+                </div>
+      
+                <div class="row aiuto">
+                  <div class="col-sm">
+                    <img src="../assets/img/aiuto/mappa.PNG" alt="aiuto mappa">
+                  </div>
+                  <div class="col-sm">
+                  La mappa è sempre disponibile. Mostra la struttura dell'applicazione e dove ci si trova. È possibile chiuderla cliccando su qualsiasi punto esterno alla mappa stessa
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Modal Mappa-->
+ <div class="modal fade" id="mappaModalCenter" tabindex="-1" role="dialog" aria-labelledby="mappaModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+            <img src="../assets/img/ti_trovi_qui_quiz_3_g.png"  alt="Mappa"/>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="exitModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exitModalLabel">Esci dall'applicazione</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Sei sicuro di voler abbandonare l'applicazione? Qualsiasi dato non salvato andrà perso.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='https://www.google.com';">Esci dall'applicazione</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <section id="mainsection" style="width: 100%;height: 100vh;">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="margin-top: 0px;margin-bottom: -5px;padding-bottom: 6px;padding-top: 9px;">
+            <div class="container"><a class="navbar-brand" href="../index.html" style="margin-right: 16px;margin-left: -16px;"><img src="../assets/img/logo5.jpg" style="margin-top: -20px;margin-bottom: -12px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="padding-top: 0px;margin-top: -20px;">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#mappaModalCenter">Mappa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#aiutoModalLong">Aiuto</a></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Impara</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="../teoria_navbar/teoria1.html">Capitolo 1 - Scratch</a><a class="dropdown-item" href="../teoria_navbar/teoria2.html">Capitolo 2 - Basi C++</a><a class="dropdown-item" href="../teoria_navbar/teoria3.html">Capitolo 3 - Paradigma a oggetti</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Quiz</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="../quiz_navbar/quiz1.html">Quiz Capitolo 1</a><a class="dropdown-item" href="../quiz_navbar/quiz2.html">Quiz Capitolo 2</a><a class="dropdown-item disabled" href="../quiz_navbar/quiz3.html">Quiz Capitolo 3</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exitModal">Esci</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ol class="breadcrumb" style="margin-top: 9px;margin-bottom: 16px;padding-bottom: 6px;padding-top: 8px;">
+            <li class="breadcrumb-item"><a href="../index.html"><span>Home</span></a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quiz Capitolo 3</li>
+        </ol>
+
+
+
+        <div class="container d-flex justify-content-center" id="container_quiz">
+            <!--questionBox-->
+            <div class="questionBox" id="app">
+
+                <!-- transition -->
+                <transition :duration="{ enter: 500, leave: 300 }" enter-active-class="animated zoomIn" leave-active-class="animated zoomOut" mode="out-in">
+
+                    <!--qusetionContainer-->
+                    <div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
+
+                        <header>
+                            <h1 class="title is-6">EasyCoding Quiz Lv.3</h1>
+                            <!--progress-->
+                            <div class="progressContainer">
+                                <progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100" max="100">{{(questionIndex/quiz.questions.length)*100}}%</progress>
+                                <p>{{(questionIndex/quiz.questions.length)*100}}% completato</p>
+                            </div>
+                            <!--/progress-->
+                        </header>
+
+                        <!-- questionTitle -->
+                        <h2 class="titleContainer title">{{ quiz.questions[questionIndex].text }}</h2>
+
+                        <!-- quizOptions -->
+                        <div class="optionContainer">
+                            <!-- <div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses" @click="selectOption(index);" v-bind:class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index"> -->
+                            <div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses" @click="selectOption(index);" v-bind:style="[userResponses[questionIndex] == index ? {'background-color': '#50c1e9'} :  {}]" :key="index">
+                                {{ index | charIndex }}. {{ response.text }}
+                            </div>
+                        </div>
+
+                        <!--quizFooter: navigation and progress-->
+                        <footer class="questionFooter">
+
+                            <!--pagination-->
+                            <nav class="pagination" role="navigation" aria-label="pagination">
+
+                                <!-- back button -->
+                                <a class="button" v-on:click="prev();" v-bind:style="[questionIndex < 1 ? {'visibility': 'hidden'}  : {}]">
+                                    Indietro
+                                </a>
+
+                                <!-- next button -->
+                                <a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
+                                    {{ (userResponses[questionIndex]==null)?'Salta':'Avanti' }}
+                                </a>
+
+                            </nav>
+                            <!--/pagination-->
+
+                        </footer>
+                        <!--/quizFooter-->
+
+                    </div>
+                    <!--/questionContainer-->
+
+                    <!--quizCompletedResult-->
+                    <div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
+
+                        <!-- quizCompletedIcon: Achievement Icon -->
+                        <span class="icon">
+                            <i class="fa" :class="score()>3?'fa-check-circle-o is-active':'fa-times-circle'"></i>
+                        </span>
+
+                        <!--resultTitleBlock-->
+                        <h2 class="title">
+                            {{ (score()>6?'Ottimo lavoro!':(score()<4?'Puoi fare di meglio, impegnati!':'Ci siamo quasi!')) }}
+                        </h2>
+                        <p class="subtitle">
+                            Punteggio: {{ score() }} / {{ quiz.questions.length }}
+                        </p>
+                        <br>
+                        <a class="button" @click="restart()">Ritenta quiz! <i class="fa fa-refresh"></i></a>
+                        <a class="button" href="../teoria/teoria3.html">Ripassa questo capitolo</a>
+                        <a class="button" href="../index.html">Torna alla Home</a>
+                        <!--/resultTitleBlock-->
+
+                    </div>
+                    <!--/quizCompetedResult-->
+
+                </transition>
+
+            </div>
+            <!--/questionBox-->
+
+        </div>
+
+    </section>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/vue.min.js"></script>
+    <script src="../assets/js/quiz3.js"></script>
+    
+</body>
+
+</html>

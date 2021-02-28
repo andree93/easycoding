@@ -1,0 +1,44 @@
+
+
+.buttons{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+#esciCaption, #entraCaption{
+    color: orange;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  
+  .Aligner-item {
+    max-width: 50%;
+  }
+  
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
+  
+  .Aligner-item--bottom {
+    align-self: flex-end;
+  }
+
+
+  #logoimg{
+      max-width: 34vw;
+  }

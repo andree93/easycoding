@@ -1,0 +1,146 @@
+
+
+
+
+var objJson =[
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Il Coding</strong></h4></span><br>Il coding possiamo intenderlo come una nuova lingua che permette di “dialogare” con il computer per assegnargli dei compiti e dei comandi in modo semplice. Giocando a programmare si impara ad usare la logica, a risolvere problemi e a sviluppare il “pensiero computazionale”, un processo logico-creativo che consente di scomporre un problema complesso in diverse parti, per affrontarlo più semplicemente un pezzetto alla volta, così da risolvere il problema generale.<br>Con il coding quindi anche i bambini potranno risolvere problemi “da grandi”, e diventare soggetti attivi della tecnologia, creando un piccolo videogioco e delle storie in pochissimo tempo.
+        Vediamo, in pratica, come funziona il coding: con il computer o il tablet potrete fare giochi ed esercizi interattivi per far svolgere ai personaggi sullo schermo le azioni utili al raggiungimento di un obiettivo.
+        Uno dei linguaggi che più si presta al nostro scopo - cioè muovere i primi passi nel mondo della programmazione, è Scratch e lo useremo per muovere i primi passi nel mondo della programmazione.`},
+        
+        
+        
+        
+        
+        
+        
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Cos'è Scratch</strong></h4></span><br> <b>Scratch</b> è un ambiente di programmazione gratuito, con un linguaggio di programmazione grafico progettato per l’insegnamento della programmazione tramite primitive visive. È adatto ad utenti con competenze informatiche basilari, e si presta a molti progetti, da semplici esperimenti, ad applicazioni interattive e giochi.
+            Scratch è utilizzabile online dal <a href="https://scratch.mit.edu/">sito ufficiale</a>
+            o offline scaricando l’apposito programma, sempre dallo stesso sito.<br>
+            In questo primo capitolo utilizzeremo Scratch per introdurre alcuni concetti basilari comuni alla maggior parte dei linguaggi di programmazione.<br>
+            Per creare un nuovo progetto, ci basterà cliccare su “Crea”, in alto a sinistra nella pagina del sito, vicino al logo di Scratch. 
+            A questo punto, Scratch dovrebbe aprire in automatico un progetto completamente pulito e pronto per la modifica.
+            La schermata bianca con il gattino sorridente al centro sarà il nostro Stage. Da lì avremo una visione di tutti i file che andremo a inserire, disegni e sfondi inclusi. Questi elementi sono detti <b>Sprite</b><br>
+            `},
+    
+    
+            
+    
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Gli Sprite</strong></h4></span><br>
+            Gli <b>Sprite</b>, potranno essere visualizzati tutti in un’unica area, ovvero la <b>Lista degli Sprite</b>. Tale lista somiglierà più ad una cartella dove potremo vedere tutti i file già caricati.<br>
+            Per far muovere tutti questi mostriciattoli disegnati – e renderli finalmente dei personaggi vivaci – dovremo sfruttare un’altra area, posta sulla destra: l’area degli script. Qui, tra un blocco e l’altro, avremo la possibilità di legare il nostro gatto sorridente ad alcune azioni particolari.<br>
+            Facciamo subito un esempio. Una volta inseriti due blocchi particolari, potremo voler spostare il nostro gatto con la pressione di un tasto sulla tastiera. E parlando proprio dei blocchi, dovremo sfruttare un’altra zona per far funzionare l’area degli script, ovvero l’elenco dei blocchi. In questa lista di blocchi colorati, potremo trovare tre sezioni distinte, denominate <b>Script</b>, <b>Costumi</b> e <b>Suoni</b>.
+            È  possibile caricare un progetto dal proprio computer (o salvarne uno nuovo) dal menu <b>File</b>.`},
+        
+            
+    
+    
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>I Blocchi</strong></h4></span><br>Nell'area "Blocchi" sono presenti tre tipi di blocchi:<br>
+            <b>Blocchi impilabili</b>: questi blocchi hanno un punto sul fondo che fuoriesce e/o in cima che rientra, come ad esempio il blocco <img src="../assets/img/nascondi.gif">. Puoi impilare questi blocchi per formare delle sequenze. Alcuni blocchi contengono un'area di input in cui puoi inserire un numero o altri caratteri. Alcuni blocchi, come ad esempio <img src="../assets/img/per_sempre_quando.gif" style="height: 40px;">, hanno una "bocca" a forma di C al cui interno puoi inserire altri blocchi.<br>
+            
+            <b>Cappelli</b>: la parte superiore di questi blocchi è arrotondata, come ad esempio <img src="../assets/img/quando_si_preme_il_tasto.gif" style="height: 40px;">.<br>Questi blocchi possono essere piazzati soltanto all'inizio di uno script, attendono che accada un certo evento, come ad esempio la pressione di un tasto, e a quel punto eseguono i blocchi sottostanti.<br><b>Reporter</b>: questi blocchi, come ad esempio <img src="../assets/img/posizione_x.gif"> e <img src="../assets/img/tasto_del_mouse_premuto.gif"> hanno una forma particolare che gli permette di essere inseriti all'interno dell'area di input di altri blocchi.<br>I reporter con i lati arrotondati (come ad esempio <img src="../assets/img/posizione_x.gif"> o <img src="../assets/img/variabile.gif"> ) rappresentano valori di tipo numerico o stringhe, e possono essere inseriti all'interno di blocchi che hanno aree di input arrotondate o rettangolari (come ad esempio <img src="../assets/img/porta_dimensione_al_100.gif">  o <img src="../assets/img/dire_ciao.gif">  ).<br>I reporter con terminazioni appuntite (come ad esempio <img src="../assets/img/tasto_del_mouse_premuto.gif"> ) rappresentano valori logici (vero o falso) e possono essere inseriti all'interno di blocchi che presentano aree di input appuntite o rettangolari (come ad esempio <img src="../assets/img/attendi_fino_a_quando.gif"> o <img src="../assets/img/dire_ciao.gif"> ).<br>
+            Clicca su un qualunque blocco reporter per vedere il suo valore.`},
+    
+    
+    
+    
+    
+    
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Liste</strong></h4></span>
+            In Scratch puoi creare e manipolare delle <b>liste</b> di elementi.<br>Le liste ti permettono di memorizzare numeri o stringhe di lettere e altri caratteri.
+            <figure>
+            <figcaption> Esempio liste </figcaption>
+                    <img src="../assets/img/liste_esempio.png" alt="esempio liste" style="height: 120px;"/>
+            </figure>
+    
+            <span style="text-align: center; color:#1d3557;"><h4><strong>Stringhe</strong></h4></span>
+            Le <b>stringhe</b> sono composte da lettere, parole o altri caratteri (ad es. mela; Ottobre 2009; gatto), e possono essere memorizzate in variabili o in liste. Puoi confrontare delle stringhe usando i seguenti blocchi logici (mostrati nelle prossime pagine).<br>
+            
+            `},
+    
+    
+    
+    
+    
+    
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Categorie blocchi</strong></h4></span>
+            I blocchi di Scratch sono organizzati in otto categorie diversificate per colore: <b>Movimento</b>, <b>Aspetto</b>, <b>Suono</b>, <b>Penna</b>, <b>Controllo</b>, <b>Sensori</b>, <b>Operatori</b> e <b>Variabili</b>.
+            Vedremo quelle principali.<br>
+            Ci sono i blocchi di controllo, molto importanti. Praticamente tutti i linguaggi di programmazione implementano meccanismi che, a seconda del risultato di un’espressione valutata, consentono di decidere se effettuare o meno un’azione o scegliere quale azione intraprendere. Parliamo dei costrutti <b>IF-ELSE</b>, <b>SWITCH-CASE</b>. È inoltre possibile ripetere più volte un’azione fino a quando la condizione è soddisfatta o per sempre (Loop).
+            
+            Esempio blocchi di controllo in scratch:<br>
+    
+            <img src="../assets/img/per_sempre.gif" style="height: 38px;"> Esegue i blocchi inseriti al suo interno all'infinito.<br><br>
+            
+            <img src="../assets/img/ripeti_10_volte.gif" style="height: 38px;"> Esegue i blocchi inseriti al suo interno per il numero di volte specificato.<br><br>
+            
+            <img src="../assets/img/quando_si_preme_il_tasto.gif" style="height: 38px;"> Esegue lo script sottostante quando il tasto specificato viene premuto.<br>
+            
+            `},
+    
+    
+    
+            
+    
+            { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Operatori aritmetici</strong></h4></span>
+                Ovviamente sono presenti gli operatori <b>aritmetici</b> e <b>logici</b>, per effettuare operazioni  aritmetiche tra numeri per confrontare valori. Ad esempio, blocco per eseguire l’addizione tra due numeri: <img src="../assets/img/plus.gif"> .<br>
+                Operatori Logici per confrontare due valori:<br>
+                <img src="../assets/img/minore.gif"> Risulta vero se il primo valore è minore del secondo.<br>
+                <img src="../assets/img/uguale.gif"> Risulta vero se i due valori sono uguali.<br>
+                <img src="../assets/img/maggiore.gif"> Risulta vero se il primo valore è maggiore del secondo.<br>
+                <img src="../assets/img/and.gif"> Risulta vero se entrambe le condizioni sono vere.<br>
+                <img src="../assets/img/or.gif"> Risulta vero se almeno una delle due condizioni è vera.<br>
+                <img src="../assets/img/not.gif"> Risulta vero se la condizione è falsa; risulta falso se la condizione è vera.<br>
+                
+                `},
+    
+    
+    
+    
+    
+    
+    
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Le variabili</strong></h4></span>
+            <b>Le variabili</b>, possono essere viste come dei “contenitori di valori”. In scratch possiamo dichiarare una variabile, impostare/cambiare il valore ad essa associata, e cancellarla.<br>
+             <img src="../assets/img/nuova_variabile.gif"> Ti permette di creare una nuova variabile e di assegnarle un nome.  Puoi decidere se la variabile sia utilizzabile da tutti gli sprite (variabile globale) o soltanto da uno sprite (variabile locale).<br>
+             <img src="../assets/img/cancella_variabile.gif"> Rimuove il nome della variabile da tutti i menu dei blocchi per la gestione delle variabili (o rimuove tutti i blocchi associati alle variabili se non ci sono altre variabili).<br>
+             <img src="../assets/img/variabile.gif"> Riporta il valore di una variabile.<br>
+             <img src="../assets/img/cambia_variabile.gif" style="height: 26px;"> Modifica il valore della variabile selezionata della quantità specificata. Se hai più di una variabile usa il menu per selezionare il nome della variabile che ti interessa.<br>
+             <img src="../assets/img/porta_variabile.gif" style="height: 26px;"> Porta il valore della variabile selezionata al valore specificato.<br>
+             <img src="../assets/img/mostra_variabile.gif" style="height: 26px;"> Mostra sullo Stage il monitor della variabile selezionata.<br>
+             <img src="../assets/img/nascondi_variabile.gif"> Nasconde il monitor della variabile selezionata in modo che non sia visibile sullo Stage.
+            `},
+    
+    
+    
+    
+    
+    
+        { adName: `
+            <span style="text-align: center; color:#1d3557;"><h4><strong>Somma con un algoritmo Scratch</strong></h4></span><br>
+            <div class="d-flex justify-content-center">
+                <video width= 46% height= auto controls>
+                    <source src="../assets/video/Scratch_la_somma_di_due_numeri.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `},
+    
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Primo traguardo raggiunto!<strong></h4></span><br>
+        Congratulazioni! Hai terminato il primo capitolo. Vediamo cosa hai imparato!<br>
+
+        <div class="d-flex justify-content-center" style="margin-top: 5%;">
+        <figure style="text-align: center;" >
+            <a href="../quiz/quiz1.html">
+                <img src="../assets/img/choose.png" alt="Quiz" style="width:12vw;"/>
+                <figcaption> Inizia ora il Quiz! </figcaption>
+            </a>
+        </figure>
+        </div>
+        `},
+
+
+
+
+
+]; // Can be obtained 

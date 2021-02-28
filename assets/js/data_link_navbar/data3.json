@@ -1,0 +1,131 @@
+
+
+
+
+var objJson =[
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Il paradigma a oggetti</strong></h4></span>
+
+        In questo capitolo imparerai le basi del paradigma a oggetti.
+        Vedremo quindi i concetti di classe, oggetti, proprietà e metodi.<br>
+        Cos'è una classe?
+        La programmazione orientata agli oggetti prevede l'organizzazione di strutture dati e procedure, in contenitori chiamati classi.
+        Una classe rappresenta un concetto esistente nella vita reale, ad esempio un’auto, una casa, un animale.<br> Una classe definisce delle proprietà (attributi), e dei comportamenti (metodi).<br>
+        Gli oggetti invece sono le istanze della classe, ciascuno ha le sue proprietà e i metodi definiti all’interno della classe. <br>
+        Ad esempio, tutte istanze della classe veicolo avranno come proprietà il numero di ruote, la marca, il livello di carburante e i metodi “avvia motore”, “vai avanti”, “vai indietro”, “sterza”, “accendi luci”.<br>
+        I principi fondamentali della programmazione a oggetti sono <strong> Ereditarietà</strong> , <strong> Information hiding</strong>  (incapsulamento), <strong> polimorfismo</strong> . <br>`},
+
+
+
+
+
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Prima classe!</strong></h4></span>
+            
+            <div class="d-flex justify-content-center">
+                <img src="../assets/img/classe_c++.png" id="classe_c_1"><br>
+                <img src="../assets/img/classe_c++2.png" id="classe_c_2"><br>
+            </div>`},
+
+
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Ereditarietà</strong></h4></span>
+        Uno dei vantaggi della programmazione a oggetti rispetto a quella imperativa è che rende più facile il riutilizzo del codice. Infatti tramite il meccanismo dell’ereditarietà è possibile estendere una classe (ereditando i metodi e gli attributi) per una classe più specifica. Ad esempio una classe <i>Veicolo</i> può essere estesa da <i>Auto</i> e <i>Scooter</i>.<br>
+        Vediamo la creazione di una classe in C++ con un esempio su repl.it 
+        <a href="https://repl.it/@andrea_carro/cwhileesempio" target="_blank">Esercitazione Classi e Metodi</a><br>
+
+        <div class="d-flex justify-content-center">
+            <img src="../assets/img/ereditarieta.png" id="imgeredita" ><br>
+        </div>`},
+
+
+
+    { adName:`<span style="text-align: center; color:#1d3557;"><h4><strong>Incapsulamento</strong></h4></span>
+        L’<i>incapsulamento</i> invece,  permette di nascondere alcuni attributi all’esterno della classe in modo da non permetterne la modifica incontrollata.
+        In questo modo, si delega il compito di impostare e leggere una proprietà di un oggetto ai rispettivi metodi, <b>GETTER</b> e <b>SETTER</b> (nell’esempio precedente, è stato usato il metodo <i>imposta_valori(int larghezza, int altezza)</i> per rendere più esplicito il passaggio.<br>
+        Nel C++ abbiamo 3 <b>modificatori di accesso</b>: <b>public</b>, <b>protected</b>, <b>private</b>.
+        I membri con modifiatore public sono accessibili da qualsiasi classe, quelli protected sono accessibili da altri membri della stessa classe e da classi derivate; quelli private invece sono accessibili soltanto da altri membri della stessa classe.<br>
+        Il modificatore di default (assegnato automaticamente se non specificato) è <i>private</i>.
+        La sintassi per specificare il modificatore di accesso è:<br>
+        <code>public:<br>
+        &nbsp int x;<br>
+        &nbsp int y;<br>
+        &nbsp int miaFunzione();<br>
+        protected:<br>
+        &nbsp float d;<br>
+        &nbsp int i;<br>
+        private:<br>
+        &nbsp int c;<br>
+        </code>`},
+
+
+
+
+        { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>I costruttori</strong></h4></span>
+            Ogni classe possiede un metodo speciale, detto <b>Costruttore </b>, il cui compito è quello di inizializzare le variabili dell’istanza appena creata. È possibile definire un proprio costruttore con i parametri che saranno utilizzati per assegnare un valore alle variabili di istanza. Se non si definisce alcun costruttore, il compilatore ne creerà uno di default senza parametri.<br>
+            L'unica differenza con qualsiasi altro metodo è che un costruttore non ha valore di ritorno, nemmeno void, un costruttore si scrive nella forma <code> MiaClasse()</code><br>
+            Ogni istanza possiede una variabile speciale, ovvero <b> this</b>, che rappresenta un riferimento a se stessa. All'interno di un metodo di instanza ci si riferisce alle proprietà con <code>this -> nomeProprietà</code> <br>`},
+
+
+
+
+
+
+    { adName: `<span style="text-align: center; color:#1d3557;"><h4><strong>Polimorfismo</strong></h4></span>
+        Il terzo principio della programmazione a oggetti è il <strong> polimorfismo</strong> . Letteralmente, la parola polimorfismo indica la possibilità per uno stesso oggetto di assumere più forme.<br>
+        Per rendere l’idea più chiara, utilizzando un esempio del mondo reale, si pensi al diverso comportamento che assumono un uomo, una scimmia e un canguro quando eseguono l’azione del camminare: l’uomo camminerà in modo eretto, la scimmia in maniera decisamente più goffa e curva mentre il canguro interpreterà tale azione saltellando.<br>
+        Riferendoci ad un sistema software ad oggetti, il polimorfismo indicherà l’attitudine di un oggetto a mostrare più implementazioni per una singola funzionalità.<br>
+        Supponiamo di voler costruire un sistema software in grado di disegnare delle figure geometriche. Per tale sistema avremo definito una classe padre chiamata <i>FiguraGeometrica</i> dalla quale avremo fatto derivare tutte le classi che si occupano della gestione di una figura geometrica ben precisa.<br>
+        `},
+
+
+    { adName: `<div class="d-flex justify-content-center"><br>
+        <img src="../assets/img/polimorfismo.png" id="imgpolimorfismo">
+        </div>
+        Grazie al <strong>polimorfismo</strong>, il sistema è in grado di capire autonomamente quale figura geometrica debba essere disegnata ed invocarne direttamente il metodo <i>disegnaFigura()</i> appartenente alla classe figlia coinvolta.<br>
+        Prova a realizzare una calcolatrice su repl.it utilizzando la programmazione ad oggetti; aiutandoti con il codice e i commenti dell’ultimo programma mostrato se non ricordi qualcosa.<br>
+        `},
+
+
+
+    { adName: `
+        <div class="d-flex justify-content-center">
+        <figure style="text-align: center;">
+                <figcaption>Clicca questo link per visualizzare e testare il codice: <a href="https://repl.it/@andrea_carro/ccalcolatriceoggetti" target="_blank">REPL.IT - Calcolatrice</a></figcaption>
+                <img src="../assets/img/repl_calc_1.png" id="imgrepl_calc_1">
+            </figure>
+        </div>`},
+
+
+    { adName: `
+        <div class="d-flex justify-content-center">
+        <figure style="text-align: center;">
+                <figcaption><b>Istanza Classe calcolatrice</b></figcaption>
+                <img src="../assets/img/repl_calc_2.png"  id="imgrepl_calc_2">
+            </figure>
+        </div>`},
+
+
+
+
+    { adName: `Molto bene, sei arrivato al termine dell’ultimo capitolo. Se non lo hai già fatto, non ti resta che testare le nuove conoscenze acquisite con i quiz!<br><br><br>
+        <div class="d-flex justify-content-center">
+        <figure style="text-align: center;" >
+                <img src="../assets/img/finish-line.png" alt="fine" style="width:8vw;"/>
+                <figcaption>  </figcaption>
+        </figure>
+        </div>
+
+
+        Se hai trovato interessanti le nozioni apprese con questa applicazione, continua il tuo percorso di apprendimento.<br>
+        Cito alcune fonti utili:<br>
+        
+        
+        <a href="https://www.w3schools.com/" target="_blank">w3schools</a><br>
+        
+        <a href="http://www.cplusplus.com/" target="_blank">cplusplus.com</a><br>
+        
+        <a href="https://www.tutorialspoint.com/index.htm" target="_blank">tutorialspoint.com</a><br>`},
+
+];

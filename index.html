@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EasyCoding</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+
+
+
+
+
+<body>
+
+    <!-- Modal Aiuto-->
+<div class="modal fade" id="aiutoModalLong" tabindex="-1" role="dialog" aria-labelledby="aiutoModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aiutoModalLongTitle">Aiuto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/esci.PNG" alt="aiuto esci">
+              </div>
+              <div class="col-sm">
+                Consente di uscire dall'applicazione in ogni momento
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/home_navbar.PNG" alt="aiuto navbar">
+              </div>
+              <div class="col-sm">
+                Dalla breadcrumb è possibile ripercorrere il percorso secondo l'organizzazione nell'applicazione
+              </div>
+            </div>
+  
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/navbar_espansa.PNG" alt="aiuto navbar">
+              </div>
+              <div class="col-sm">
+                Alcuni elementi della navbar sono espandibili. Clicca per vederne il contenuto
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/torna_home.PNG" alt="aiuto navbar">
+              </div>
+              <div class="col-sm">
+                Cliccando questa icona, presente in alcune pagine dell'applicazione, è possibile tornare alla home
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/back-next.PNG" alt="aiuto navigazione">
+              </div>
+              <div class="col-sm">
+                [Capitoli toria] Navigazione tra le pagine del capitolo corrente.<br>
+                È presente l'indicatore del numero della pagina corrente e di quelle totali
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/avanti_quiz.PNG" alt="aiuto quiz">
+              </div>
+              <div class="col-sm">
+                [Quiz] Dopo aver selezionato una risposta, passa alla domanda successiva
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/salta.PNG" alt="aiuto quiz">
+              </div>
+              <div class="col-sm">
+                [Quiz] Salta domanda e passa alla successiva.<br>
+                La risposta non data sarà conteggiata come errata
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/indietro_quiz.PNG" alt="aiuto quiz">
+              </div>
+              <div class="col-sm">
+                [Quiz] Torna alla domanda precedente
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/ritenta_quiz.PNG" alt="aiuto quiz">
+              </div>
+              <div class="col-sm">
+                [Schermata esito quiz] permette di ritentare il quiz corrente
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/ripassa capitolo_quiz.PNG" alt="aiuto quiz">
+              </div>
+              <div class="col-sm">
+                [Schermata esito quiz] cliccando questo bottone sarà possibile ritornare al capitolo relativo al quiz
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/capitolo_successivo_quiz.PNG" alt="aiuto quiz">
+              </div>
+              <div class="col-sm">
+                [Schermata esito quiz] cliccando questo bottone sarà possibile accedere al capitolo successivo a quello trattato nel quiz corrente
+              </div>
+            </div>
+  
+            <div class="row aiuto">
+              <div class="col-sm">
+                <img src="assets/img/aiuto/mappa.PNG" alt="aiuto mappa">
+              </div>
+              <div class="col-sm">
+              La mappa è sempre disponibile. Mostra la struttura dell'applicazione e dove ci si trova. È possibile chiuderla cliccando su qualsiasi punto esterno alla mappa stessa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+    <!-- Modal Mappa-->
+  <div class="modal fade" id="mappaModalCenter" tabindex="-1" role="dialog" aria-labelledby="mappaModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+            <img src="assets/img/ti_trovi_qui_home.png"  alt="Mappa"/>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal exit-->
+<div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="exitModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exitModalLabel">Esci dall'applicazione</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Sei sicuro di voler abbandonare l'applicazione? Qualsiasi dato non salvato andrà perso.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='https://google.com';">Esci dall'applicazione</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <section id="mainsection" style="width: 100%;height: 100vh;">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="margin-top: 0px;margin-bottom: -5px;padding-bottom: 6px;padding-top: 9px;">
+            <div class="container"><a class="navbar-brand" href="index.html" style="margin-right: 16px;margin-left: -16px;"><img src="assets/img/logo5.jpg" style="margin-top: -20px;margin-bottom: -12px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="padding-top: 0px;margin-top: -20px;">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#mappaModalCenter">Mappa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#aiutoModalLong">Aiuto</a></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Impara</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="teoria_navbar/teoria1.html">Capitolo 1 - Scratch</a><a class="dropdown-item" href="teoria_navbar/teoria2.html">Capitolo 2 - Basi C++</a><a class="dropdown-item" href="teoria_navbar/teoria3.html">Capitolo 3 - Paradigma a oggetti</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Quiz</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="quiz_navbar/quiz1.html">Quiz Capitolo 1</a><a class="dropdown-item" href="quiz_navbar/quiz2.html">Quiz Capitolo 2</a><a class="dropdown-item" href="quiz_navbar/quiz3.html">Quiz Capitolo 3</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exitModal">Esci</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-center" style="margin-top: 2%;">
+            <video width=45% height: auto controls id="homevideo">
+                <source src="assets/video/pensiero_computazionale_coding.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+
+
+
+
+        <div class="container">
+          <div class="row homeicons">
+            <div class="col-md-3">
+              <figure style="text-align: center;">
+                <a href="teoria/teoria1.html">
+                    <img src="assets/img/project-management.png" style="width: 6vw;" alt="Iniziamo!"/>
+                    <figcaption>Iniziamo!</figcaption>
+                </a>
+            </figure>
+            </div>
+            <div class="col-md-3">
+              <figure style="text-align: center;">
+                <a href="info.html">
+                    <img src="assets/img/info.png" style="width: 6vw;" alt="Info"/>
+                    <figcaption>Info</figcaption>
+                </a>
+            </figure>
+            </div>
+            <div class="col-md-3">
+              <figure style="text-align: center;">
+                <a href="credits.html">
+                    <img src="assets/img/hierarchy-structure_1.png" style="width: 6vw;" alt="Chi siamo"/>
+                    <figcaption>Credits</figcaption>
+                </a>
+            </figure>
+            </div>
+
+            <div class="col-md-3">
+              <figure style="text-align: center;" >
+                <a href="" data-toggle="modal" data-target="#exitModal">
+                    <img src="assets/img/exit.png" style="width: 6vw;" alt="Esci"/>
+                    <figcaption>Esci</figcaption>
+                </a>
+            </figure>
+            </div>
+          </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
