@@ -1,1 +1,2 @@
-easycoding
+EasyCoding è un progetto per un esame universitario. Si tratta di un'applicazione multimediale per l'apprendimento delle basi della programmazione. I linguaggi utilizzati sono prevalentemente HTML5, CSS, Javascript. Risorse e framework: Vue.js e Bootstrap. 
+Il quiz utilizza: https://codepen.io/mobihack-official/pen/EJpRXQ
